@@ -1,2 +1,1 @@
-while True:
-	print("I am working!")
+print("Yes, this code works!")
