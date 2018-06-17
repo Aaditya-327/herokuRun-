@@ -1,8 +1,8 @@
 import os 
-text = os.environ.get('MESSAGE', None)
-# text = "ctpoka"
-
+# text = os.environ.get('MESSAGE', None)
 is_ascii = lambda s: len(s) == len(s.encode())
+
+text = input('Enter the MESSAGE: \n')
 def can_send(text):
 	if type(text) != type(''):
 		return False, 'Not text'
