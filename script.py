@@ -26,7 +26,7 @@ r = requests.get(linkToday)
 
 
 #Extract data from the page
-soup = BeautifulSoup(r.text, "lxml")
+soup = BeautifulSoup(r.text, 'html.parser')
 
 Month = soup.find("div", {"id": "mth"}).text[1:]
 Date = soup.find("div", {"id": "gate"}).text[:-4]
